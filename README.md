@@ -19,12 +19,17 @@ combination on internal (cross-validated) and external (GEO) cohorts.
 | `run_all_grids.py` | Watchdog over all three cancers (serial by cancer, adaptive workers, resumable). |
 | `run_analysis_pipeline.py` | Stage-C aggregation → summary tables → figures → manuscript numbers. |
 | `aggregate_analyze.py` | Specification curve, two-panel variance decomposition, external attenuation, cross-cancer rank correlations. |
-| `make_figures.py` | Figures 1–6. |
-| `panelB_report.py` | Within-CV panel + real-vs-random gaps + internal-vs-external. |
+| `aggregate_cutoff_effects.py` | Per-specification cut-off effects: hazard ratio, log-rank p and their aggregates, with the C-index shown to be cut-off-invariant. |
+| `make_figures.py` | Figures 1–6 (Figure 1 merged 3-panel; Figure 3 all four cancer × external-cohort pairs). |
+| `make_graphical_abstract.py` | Graphical abstract; every number is read from `results/analysis/*`. |
+| `make_supplementary.py` | Supplementary Tables S1–S6. |
+| `make_supplementary_figures.py` | Supplementary Figures S1–S4. |
+| `panelB_report.py` | Within-CV panel + real-vs-random gaps + internal-vs-external (Spearman and Pearson both reported). |
 | `make_p4_report.py` | Human-readable results report (filled only from `results/analysis/*`). |
 | `sens_dual.py` | Dual-version (strict / lenient) sensitivity on three fixed settings. |
 | `stageA_sens.R` | Sensitivity variant of Stage A. |
 | `sens_compare.py` | Compares strict vs lenient spec distributions. |
+| `build_jbi_package.py` | Assembles the journal submission package (self-contained manuscript + figures) from the markdown sources. |
 
 ## Environment
 
